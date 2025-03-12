@@ -1,0 +1,15 @@
+Enter your Name: 
+KELLY
+Enter your Age: 
+20
+Enter your Membership Status(Active/Inactive):
+ACTIVE 
+Enter your Desired duration for Membership(In Months): 
+2
+Member Details:
+
+Name: KELLY
+Age: 20
+Membership Status: ACTIVE
+Duration: 2 Months
+Fees: $200
