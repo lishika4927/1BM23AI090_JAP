@@ -1,0 +1,29 @@
+Fixed Length Stack Operations:
+Stack Size: 0
+Stack Size: 1
+Stack Size: 2
+Stack Size: 3
+Pop: 30
+Stack Size: 2
+Pop: 20
+Stack Size: 1
+Is Empty: false
+Stack Size: 1
+Pop: 10
+Stack Size: 0
+Is Empty: true
+
+Dynamic Length Stack Operations:
+Stack Size: 0
+Stack Size: 1
+Stack Size: 2
+Stack Size: 3
+Pop: 30
+Stack Size: 2
+Pop: 20
+Stack Size: 1
+Is Empty: false
+Stack Size: 1
+Pop: 10
+Stack Size: 0
+Is Empty: true
