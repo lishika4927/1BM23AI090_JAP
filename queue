@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+class GQueue<T> {
+    private ArrayList<T> queue; // Internal storage for the queue
+    private int size; // Current size of the queue
+
+    public GQueue() {
+        queue = new ArrayList<>(); // Initialize the queue
+        size = 0; // Initialize size
+    }
+
+    // Method to add an element to the queue
+    public void enqueue(T element) {
+        queue.add(element); // Add element to the end of the queue
+        size++; // Increment size
+    }
+
+    // Method to remove and return the front element of the queue
+    public T dequeue() {
+        if (size == 0) {
+            throw new IllegalStateException("Queue is empty");
+        }
+        T delElement = queue.remove(0); // Remove the first element
+        size--; // Decrement size
+        return delElement; // Return the removed element
+    }
+
+    // Method to display all elements in the queue
+    public void display() {
+        for (T element : queue) {
+            System.out.println(element);
+        }
+    }
+
+    // Method to get the current size of the queue
+    public int getSize() {
+        return size;
+    }
+}
+
+public class Queue {
+    public static void main(String[] args) {
+        // Create a GrowableQueue of integers
+        GQueue<Integer> integerQueue = new GQueue<>();
+
+        // Enqueue elements
+        integerQueue.enqueue(10);
+        integerQueue.enqueue(20);
+        integerQueue.enqueue(30);
+
+        System.out.println("Elements in the queue are:");
+        integerQueue.display(); // Display elements in the queue
+
+        // Dequeue an element
+        int dequeuedElement = integerQueue.dequeue();
+        System.out.println("Dequeued element: " + dequeuedElement);
+
+        // Display size of the queue
+        System.out.println("Queue size: " + integerQueue.getSize());
+    }
+}
